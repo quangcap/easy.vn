@@ -1,0 +1,253 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  background-color: #0d1117;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #0d1117;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 0.75rem 1.5rem;
+  transition: background 0.2s ease;
+  min-height: 44px;
+}
+
+.nav-btn.primary {
+  background-color: #2563eb;
+  color: black;
+  border: none;
+}
+
+.nav-btn.secondary {
+  background-color: #1f2937;
+  color: white;
+  border: none;
+}
+
+/* Main Layout */
+.packeasy-main {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Top section: image + text */
+.packeasy-top {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.packeasy-image {
+  flex: 0 0 160px;
+}
+
+.app-logo {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+.packeasy-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.packeasy-text h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #a1a1aa;
+  margin-bottom: 1.5rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-outline {
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: black;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #3b82f6;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #444;
+  color: white;
+}
+
+.btn-outline:hover {
+  background-color: #222;
+}
+
+/* Feature Cards Section */
+.features-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+}
+
+.feature-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 360px;
+  border: 1px solid #2a2a2a;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #111;
+}
+
+.feature-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.feature-desc {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* Footer */
+footer {
+  background-color: #0d1117;
+  border-top: 1px solid #1a1a1a;
+  padding: 1rem 2rem;
+  font-size: 0.85rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+}
+
+footer a {
+  color: #a1a1aa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Privacy Page Layout */
+.privacy-main {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.back-link {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.updated-date {
+  font-size: 0.85rem;
+  color: #a1a1aa;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+  list-style: disc;
+  color: #d1d5db;
+}

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  background-color: #0d1117;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Layout container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+/* Header */
+header {
+  background-color: #0d1117;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: clamp(1.25rem, 2vw, 1.75rem); /* responsive */
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  min-height: 44px;
+  border-radius: 16px;
+}
+
+/* Primary button */
+.nav-btn.primary {
+  background-color: #2563eb;
+  color: black;
+  border: none;
+  padding: 0.75rem 1.5rem;
+}
+
+/* Secondary button */
+.nav-btn.secondary {
+  background-color: #1f2937;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.75rem;
+}
+
+/* Main */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+main h1 {
+  font-size: clamp(2rem, 6vw, 4rem); /* responsive */
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+main p {
+  font-size: clamp(1.125rem, 3vw, 2rem); /* responsive */
+  color: #a1a1aa;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #1d4ed8;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #2563eb;
+}
+
+/* Footer */
+footer {
+  background-color: #0d1117;
+  border-top: 1px solid #1a1a1a;
+  padding: 1rem 2rem;
+  font-size: 0.85rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+footer a {
+  color: #a1a1aa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
