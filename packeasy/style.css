@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+header {
+  padding: 20px 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  width: 300px;
+  max-width: 100%;
+}
+
+.content {
+  max-width: 500px;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.subhead {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.app-store-button img {
+  height: 40px;
+  margin-top: 20px;
+}
+
+.requirement {
+  font-size: 12px;
+  color: #555;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 40px 20px;
+  color: #888;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Pushes footer to the bottom */
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 40px 20px;
+  color: #888;
+}
+
+footer .privacy-link {
+  color: #888;
+  text-decoration: none;
+}
+
+footer .privacy-link:hover {
+  text-decoration: underline;
+}
