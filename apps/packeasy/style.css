@@ -251,3 +251,13 @@ ul {
   list-style: disc;
   color: #d1d5db;
 }
+
+.email-link {
+  color: #a1a1aa;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
